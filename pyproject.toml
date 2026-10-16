@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ugreen-nas"
+version = "1.1.0"
+description = "Object-Oriented Management SDK for UGREEN NAS devices running UGOS / UGOS Pro"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "UGREEN NAS Community" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Hardware",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "cryptography>=3.4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ARCOOON/ugreen-nas-python"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ugreen_nas*"]
